@@ -6,6 +6,7 @@ import { getXschoolData } from "@/lib/api";
 import Founder from "@/components/founder/page";
 import Program from "@/components/program/page";
 import Quote from "@/components/quotes/page";
+import Faq from "@/components/faq/faq";
 
 export default async function Home() {
   const apiData = await getXschoolData();
@@ -18,7 +19,8 @@ export default async function Home() {
         <About data={apiData} />
         <Founder data={apiData} />
         <Program data={apiData} />
-        <Quote/>
+        <Quote />
+        <Faq data={apiData}/>
       </main>
     </>
   );
