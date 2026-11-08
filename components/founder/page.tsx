@@ -8,7 +8,7 @@ interface FounderProps {
 export default function Founder({ data }: FounderProps) {
   return (
     <section id="founder" className="px-5 py-20 md:px-[60px] md:py-36">
-      <h1 className="mb-10 text-[40px] uppercase md:mb-20 md:text-[90px]">
+      <h1 className="mb-10  uppercase md:mb-20 text-[24px] md:text-[46px] lg:text-[90px] font-medium">
         FOUNDER
       </h1>
 
@@ -17,8 +17,8 @@ export default function Founder({ data }: FounderProps) {
           key={index}
           className="flex flex-col gap-8 xl:flex-row md:items-center md:gap-[115px]"
         >
-              <div className="relative w-full shrink-0 md:w-[522px]">
-                  {/* LEFT */}
+          <div className="relative w-full shrink-0 md:w-[522px]">
+            {/* LEFT */}
             <Image
               src={founder.image}
               alt={founder.name}
@@ -31,8 +31,8 @@ export default function Founder({ data }: FounderProps) {
               <h3 className="text-base font-medium">{founder.name}</h3>
               <p className="text-sm">{founder.position}</p>
             </div>
-              </div>
-              {/* right . */}
+          </div>
+          {/* right . */}
 
           <div className="flex-1">
             <h2 className="mb-6 text-[26px] leading-[42px] text-[#14141A] md:text-[36px] md:leading-[62px]  uppercase w-[250px] lg:w-[450px]">
