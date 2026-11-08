@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getXschoolData } from "@/lib/api";
 import Founder from "@/components/founder/page";
 import Program from "@/components/program/page";
+import Quote from "@/components/quotes/page";
 
 export default async function Home() {
   const apiData = await getXschoolData();
@@ -16,7 +17,8 @@ export default async function Home() {
         <HomeHero />
         <About data={apiData} />
         <Founder data={apiData} />
-        <Program data={apiData}/>
+        <Program data={apiData} />
+        <Quote/>
       </main>
     </>
   );
