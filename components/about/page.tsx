@@ -57,7 +57,7 @@ export default function About({ data }: AboutProps) {
   }, [activeIndex, data.about_images.length]);
 
   return (
-    <section id="about" className="border pt-20 md:pt-36">
+    <section id="about" className="border pt-20 md:pt-36 ">
       <div className="content px-5 md:px-15 flex flex-col gap-10 md:gap-20">
         <div className="flex justify-between items-end text-[#14141A]">
           <h1 className="text-[24px] md:text-[90px] md:leading-[100px] uppercase w-50">
