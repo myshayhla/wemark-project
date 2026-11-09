@@ -8,6 +8,7 @@ import Program from "@/components/program/page";
 import Quote from "@/components/quotes/page";
 import Faq from "@/components/faq/faq";
 import Footer from "@/components/layout/footer/footer";
+export const instant = false;
 
 export default async function Home() {
   const apiData = await getXschoolData();
