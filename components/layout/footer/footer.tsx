@@ -102,7 +102,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* ox (animasiya add olunmalidi) */}
+        {/* ox (scrol animasiya add olunmalidi) */}
         <Link
           href="#top"
           aria-label="Back to top"
@@ -117,10 +117,33 @@ export default function Footer() {
           />
         </Link>
       </div>
-      <div className="border border-t-[#e0e0e080]] mt-10">
-        <Image src="/images/footer-logo.png" alt="" fill className="w-100vw  h-20vw"/>
+      <div className="mt-15 border-t border-[#e0e0e080] py-10 md:py-15">
+        <div className="w-[90%] md:w-[80%] m-auto">
+          <Image
+            src="/images/footer-logo.png"
+            alt="Wemark"
+            width={1200}
+            height={300}
+            className="h-auto w-full object-contain"
+          />
+        </div>
       </div>
-      
+      <div className="flex flex-col md:flex-row  items-start md:items-center gap-4 justify-between">
+        <div className="flex gap-4 text-[#e0e0e080]">
+          <p>Copyright © 2024 Wemark</p>
+          <p>terms & privacy</p>
+        </div>
+        <div className="flex items-center gap-2  ">
+          <Image
+            src="/images/globe.svg"
+            alt=""
+            width={24}
+            height={24}
+            className="transition-transform duration-300 hover:-translate-y-1"
+          />
+          <span className="uppercase">AZərbaycan dİLİ</span>
+        </div>
+      </div>
     </footer>
   );
 }
