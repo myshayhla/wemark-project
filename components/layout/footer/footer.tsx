@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="mt-20 bg-[#14141A] px-5 py-10 text-[#E0E0E0] md:mt-50 md:px-[60px] md:py-20"
+      className="mt-20 bg-[#14141A] px-5 py-10 text-[#E0E0E0] md:mt-50 md:px-15 md:py-20"
     >
       <div className="flex flex-col gap-12 md:flex-row md:justify-between">
         <div className="grid grid-cols-2 gap-8 md:flex md:gap-20">
@@ -94,19 +94,29 @@ export default function Footer() {
 
               <Link
                 href="tel:+994515555555"
-                className="text-[18px] leading-[28px] text-[#e0e0e080] md:text-[24px] md:leading-[36px]"
+                className="text-[18px] leading-7 text-[#e0e0e080] md:text-[24px] md:leading-9"
               >
                 +994 51 555 55 55
               </Link>
             </div>
           </div>
+            <div className=" items-center gap-2 flex md:hidden">
+              <Image
+                src="/images/globe.svg"
+                alt=""
+                width={24}
+                height={24}
+                className="transition-transform duration-300 hover:-translate-y-1"
+              />
+              <span className="uppercase text-[14px]">AZərbaycan dİLİ</span>
+            </div>
         </div>
 
         {/* ox (scrol animasiya add olunmalidi) */}
         <Link
           href="#top"
           aria-label="Back to top"
-          className="flex h-12 w-12 items-center justify-center self-end md:self-start"
+          className="hidden md:flex h-12 w-12 items-center justify-center self-end md:self-start"
         >
           <Image
             src="/images/arrow-top.svg"
@@ -117,7 +127,7 @@ export default function Footer() {
           />
         </Link>
       </div>
-      <div className="mt-15 border-t border-[#e0e0e080] py-10 md:py-15">
+      <div className="mt-10 md:mt-15 border-t border-[#e0e0e080] py-10 md:py-15">
         <div className="w-[90%] md:w-[80%] m-auto">
           <Image
             src="/images/footer-logo.png"
@@ -133,7 +143,7 @@ export default function Footer() {
           <p>Copyright © 2024 Wemark</p>
           <p>terms & privacy</p>
         </div>
-        <div className="flex items-center gap-2  ">
+        <div className=" items-center gap-2 hidden md:flex">
           <Image
             src="/images/globe.svg"
             alt=""
@@ -141,7 +151,7 @@ export default function Footer() {
             height={24}
             className="transition-transform duration-300 hover:-translate-y-1"
           />
-          <span className="uppercase">AZərbaycan dİLİ</span>
+          <span className="uppercase text-[14px]">AZərbaycan dİLİ</span>
         </div>
       </div>
     </footer>

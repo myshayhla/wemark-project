@@ -57,10 +57,10 @@ export default function About({ data }: AboutProps) {
   }, [activeIndex, data.about_images.length]);
 
   return (
-    <section id="about" className=" pt-20 md:pt-36 px-5 md:px-15  ">
-      <div className="content  flex flex-col gap-10 md:gap-20">
+    <section id="about" className=" pt-20 md:pt-36   ">
+      <div className="content  flex flex-col gap-10 md:gap-20 px-5 md:px-15">
         <div className="flex justify-between items-end text-[#14141A]">
-          <h1 className=" text-[24px] md:text-[46px] lg:text-[90px] font-medium md:leading-[100px] uppercase w-50">
+          <h1 className=" text-[24px] md:text-[46px] lg:text-[90px] font-medium md:leading-25 uppercase w-50">
             {data.about_title}
           </h1>
 
@@ -69,7 +69,7 @@ export default function About({ data }: AboutProps) {
           </Link>
         </div>
 
-        <p className="text-[20px] leading-[28px] md:text-[30px] md:leading-normal whitespace-pre-line">
+        <p className="text-[20px] leading-7 md:text-[30px] md:leading-normal whitespace-pre-line">
           {data.about_description}
         </p>
       </div>
@@ -86,7 +86,7 @@ export default function About({ data }: AboutProps) {
           {data.about_images.map((image, index) => (
             <div
               key={index}
-              className="relative h-[250px] w-[calc(100vw-60px)] max-w-[700px] shrink-0 md:h-[400px]"
+              className="relative h-62 w-[calc(100vw-60px)] max-w-175 shrink-0 md:h-100"
             >
               <Image
                 src={image.image}

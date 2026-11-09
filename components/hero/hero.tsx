@@ -1,5 +1,4 @@
 import Image from "next/image";
-import './style.css'
 
 export default function HomeHero() {
   return (
@@ -15,7 +14,7 @@ export default function HomeHero() {
         sizes="100vw"
         className="object-cover  object-[60%] md:object-top z-1  "
       />
-      <div className="relative z-2 flex h-full  flex-col justify-center md:pt-[40] tracking-[-0.02em] text-[#e0e0e0] text-[30px] md:text-[116px]  md:leading-30">
+      <div className="relative z-2 flex h-full  flex-col justify-center md:pt-[40] tracking-[-0.02em] text-[#e0e0e0] text-[30px] md:text-[60px]  md:leading-20 lg:text-[116px] lg:leading-30">
         <div className="w-full text-left">
           <h1 className="hero-title">WE ANSWER FASTER</h1>
         </div>

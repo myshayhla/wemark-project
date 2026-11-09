@@ -19,7 +19,7 @@ export default function Program({ data }: ProgramProps) {
             ></div>
 
             <div
-              className="program-description text-[20px] text-[30px]"
+              className="program-description text-[20px] md:text-[30px]"
               dangerouslySetInnerHTML={{
                 __html: program.description,
               }}
