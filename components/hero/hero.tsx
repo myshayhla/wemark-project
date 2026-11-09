@@ -13,9 +13,9 @@ export default function HomeHero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-center md:object-top z-1  "
+        className="object-cover  object-[60%] md:object-top z-1  "
       />
-      <div className="relative z-10 flex h-full  flex-col justify-center border  md:pt-[150px]">
+      <div className="relative z-2 flex h-full  flex-col justify-center md:pt-[40] tracking-[-0.02em] text-[#e0e0e0] text-[30px] md:text-[116px]  md:leading-30">
         <div className="w-full text-left">
           <h1 className="hero-title">WE ANSWER FASTER</h1>
         </div>
@@ -25,7 +25,7 @@ export default function HomeHero() {
         </div>
 
         <div className="w-full text-right">
-          <h1 className="hero-title">EXPERIENCES</h1>
+          <h1 className="hero-title">DON’T WORRY</h1>
         </div>
       </div>
     </section>
