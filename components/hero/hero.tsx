@@ -7,7 +7,7 @@ export default function HomeHero() {
       className="relative h-screen w-full overflow-hidden px-5 md:px-15 "
     >
       <Image
-        src="/images/home-hero.webp "
+        src="/images/home-hero.webp"
         alt="Wemark Agency Hero Background"
         fill
         priority
